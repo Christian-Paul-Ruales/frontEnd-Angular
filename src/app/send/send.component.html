@@ -1,0 +1,262 @@
+
+        <form >
+          
+  <div >
+      <div class="card">
+        <div class="card-header">
+          <h4>No sabes que pedir?</h4>
+        </div>
+        <div class="card-body">
+          <!--Pregunta 1-->
+          
+          <hr />
+          <!--Pregunta 2-->
+          <div class="row">
+             <h5> Prefiero el sabor de:</h5>
+            
+              
+          </div>
+          <div class="row">
+              <div class="btn-group " data-toggle="buttons">
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p11" autocomplete="off" value="mariscos"  [(ngModel)]="p1.response"  #options> mariscos frescos
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p12" autocomplete="off" value="pescado_fresco" [(ngModel)]="p1.response" #options> Pescado fresco
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p13" autocomplete="off" value="carne_cerdo" [(ngModel)]="p1.response" #options> carne de cerdo
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p14" autocomplete="off" value="frutas" [(ngModel)]="p1.response" #options> frutas
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p15" autocomplete="off" value="bacalo" [(ngModel)]="p1.response" #options> bacalao
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="p1" id="p16" autocomplete="off" value="higos" [(ngModel)]="p1.response" #options> Sabores dulces
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="p17" autocomplete="off" value="carne_baja_grasa" [(ngModel)]="p1.response" #options> Carne baja en grasa
+                </label>
+              
+            </div>
+          </div>
+
+
+
+          <hr />
+           <!--Pregunta 3
+            la 2 de encebollado y ceviche
+          -->
+           <div class="row">
+              <h5>¿Le gusta sentir el sabor de la cevolla en su paladar?</h5>
+            
+              
+          </div>
+          <div class="row" style="margin-top: 10px;">
+              <div class="btn-group " data-toggle="buttons">
+                <label class="btn btn-secondary">
+                  <input type="radio" name="cevolla" id="cevolla1" autocomplete="off" value="cevolla_curtida"  [(ngModel)]="aderitivo_cevolla.response"  #options> Curtida
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="cevolla" id="cevolla2" autocomplete="off" value="cevolla_picante" [(ngModel)]="aderitivo_cevolla.response" #options> Si es picante mejor
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="cevolla" id="cevolla3" autocomplete="off" value="cevolla" [(ngModel)]="aderitivo_cevolla.response" #options> Me gusta de cualquier forma
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="cevolla" id="cevolla4" autocomplete="off" value="no" [(ngModel)]="aderitivo_cevolla.response" #options> No, no la soporto
+                </label>
+                
+              
+            </div>
+          </div>
+          <hr />
+
+           <!--Pregunta 4
+            la 2 de hornado
+          -->
+          <div class="row">
+            <h5>Le gusta el sabor del curtido dulce?</h5>
+              
+              
+          </div>
+          <div class="row">
+              <div class="btn-group " data-toggle="buttons">
+                <label class="btn btn-secondary">
+                  <input type="radio" name="aderitivo_papa_tortilla" id="aderitivo_papa_tortilla1" autocomplete="off" value="curtido_dulce"  [(ngModel)]="aderitivo_papa_tortilla.response"  #options> Si
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="aderitivo_papa_tortilla" id="aderitivo_papa_tortilla2" autocomplete="off" value="no" [(ngModel)]="aderitivo_papa_tortilla.response" #options> No
+                </label>
+                
+                
+              
+            </div>
+          </div>
+
+
+
+           <!--Pregunta 4
+            la 2 de colada morada
+          -->
+            <div class="row">
+              <h5>¿Disfruta mucho de acompañar su plato con una arina como lo es el pan?</h5> 
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_pan" id="aderitivo_pan1" autocomplete="off" value="pan"  [(ngModel)]="aderitivo_pan.response"  #options> Si
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_pan" id="aderitivo_pan2" autocomplete="off" value="no" [(ngModel)]="aderitivo_pan.response" #options> No
+                    </label>
+                    
+                    
+                  
+                </div>
+              </div>
+         
+
+           <!--Pregunta 5
+            la 2 de fanesca¿La textura de tu plato lo encuentras mucho mas sabroso si es cremoso?
+          -->
+            <div class="row">
+              <h5>¿La textura de tu plato lo encuentras mucho mas sabroso si es cremoso?</h5>
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_crema" id="aderitivo_crema1" autocomplete="off" value="crema"  [(ngModel)]="aderitivo_crema.response"  #options> Si
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_crema" id="aderitivo_crema2" autocomplete="off" value="no" [(ngModel)]="aderitivo_crema.response" #options> No
+                    </label>
+                    
+                    
+                  
+                </div>
+              </div>
+        
+
+          
+
+
+          <!--Pregunta 6
+            higos 2 no le puse
+            la 2 de cuy
+          -->
+            <div class="row">
+              <h5>¿Gustaria consumir una buena fuente de proteinas?</h5>
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_proteinas" id="aderitivo_proteinas1" autocomplete="off" value="proteinas"  [(ngModel)]="aderitivo_proteinas.response"  #options> Si
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="aderitivo_proteinas" id="aderitivo_proteinas2" autocomplete="off" value="no" [(ngModel)]="aderitivo_proteinas.response" #options> No
+                    </label>
+                    
+                    
+                  
+                </div>
+              </div>
+
+          
+          <!--Pregunta 6
+            higos 2 no le puse
+            la 2 de cuy
+          -->
+            <div class="row">
+              <h5>¿Que prefiere a la hora de acompanar un plato?</h5>
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_1" autocomplete="off" value="limon"  [(ngModel)]="preg3_.response"  #options> Algo que vaya bien con limon
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_2" autocomplete="off" value="yuca" [(ngModel)]="preg3_.response" #options> Yuca
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_3" autocomplete="off" value="papa_tortilla" [(ngModel)]="preg3_.response" #options> Papa en tortilla
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_4" autocomplete="off" value="dulce" [(ngModel)]="preg3_.response" #options> Algo dulce
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_5" autocomplete="off" value="granos" [(ngModel)]="preg3_.response" #options> Granos Tiernos (frejol, arveja, etc)
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_6" autocomplete="off" value="queso" [(ngModel)]="preg3_.response" #options> Queso
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="preg3_" id="preg3_7" autocomplete="off" value="ppensalada" [(ngModel)]="preg3_.response" #options> papas y Ensalada
+                    </label>
+
+                </div>
+              </div>
+
+
+        </div>
+      </div>
+    </div>
+          <br/>
+
+
+          <button (click)="Sendr(options.value)" class="btn btn-outline-danger"  >Recomendar</button>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Plato</th>
+                <th>Afinidad</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ceviche</td>
+                <td>{{cadena[0]}}</td>
+              </tr>
+              <tr>
+                <td>Encebollado</td>
+                <td>{{cadena[1]}}</td>
+              </tr>
+              <tr>
+                  <td>Hornado</td>
+                  <td>{{cadena[2]}}</td>
+              </tr>
+              <tr>
+                    <td>Colada Morada</td>
+                    <td>{{cadena[3]}}</td>
+              </tr>
+              <tr>
+                  <td>Fanesca</td>
+                  <td>{{cadena[4]}}</td>
+            </tr>
+            <tr>
+                <td>Higos</td>
+                <td>{{cadena[5]}}</td>
+          </tr>
+          <tr>
+              <td>Cuy</td>
+              <td>{{cadena[6]}}</td>
+        </tr>
+
+
+            </tbody>
+          </table>
+          <p>{{reply.response}}</p>
+          <hr />
+          Ceviche <br>
+          Encebollado {{cadena[1]}}<br>
+          Hornado {{cadena[2]}}<br>
+          Colada Morada {{cadena[3]}}<br>
+          Fanesca {{cadena[4]}}<br>
+          Higos {{cadena[5]}}<br>
+          Cuy {{cadena[6]}}<br>
+
+        </form>
+        
+      
