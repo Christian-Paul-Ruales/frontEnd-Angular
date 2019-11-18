@@ -8,12 +8,14 @@ import {FormsModule} from '@angular/forms';
 import { ServiceService } from './Service/service.service';
 import {HttpClientModule} from '@angular/common/http';
 import { SendComponent } from './send/send.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResultsComponent,
     SendComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

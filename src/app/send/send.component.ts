@@ -24,7 +24,19 @@ export class SendComponent implements OnInit {
   aderitivo_proteinas:results=new results();
   preg3_:results=new results();
   cadena:String[];
-  myresults:results[];
+  auxObject:results=new results();
+  
+  auxfood:food=new food;
+  auxfood1:food=new food;
+  auxfood2:food=new food;
+  auxfood3:food=new food;
+  auxfood4:food=new food;
+  auxfood5:food=new food;
+  auxfood6:food=new food;
+
+
+  foods:food[]=[this.auxfood,this.auxfood1,this.auxfood,this.auxfood,this.auxfood1,this.auxfood,this.auxfood];
+
   ngOnInit() {
     
   }
@@ -41,12 +53,73 @@ export class SendComponent implements OnInit {
         //this.router.navigate(["results"]);
         this.reply=data;
         this.cadena=this.reply.response.split("-");
-        var result1=new food();
-        //results1.name
-        this.myresults[0]
-        console.log("Respuesta: "+this.reply.response);
+        //this.foods=new food[7];
+        /**     Ceviche */
+
+        
+        this.auxfood.name="Ceviche";
+        this.auxfood.grade=parseInt(this.cadena[0].toString());
+        this.auxfood.desciption="es un plato consistente en pescado, mariscos o ambos en aliños cítricos. Diferentes versiones del cebiche forman parte de la cultura culinaria de diversos países latinoamericanos litorales del océano Pacífico";
+        this.foods[0]=this.auxfood;
+
+        //this.foods[0]=this.auxfood;
+        /**     Encebollado */
+        this.auxfood1.name="Encebollado";
+        this.auxfood1.grade=parseInt(this.cadena[1].toString());
+        this.auxfood1.desciption="El encebollado es un plato típico ecuatoriano originario de la región costa,1​ que se cree que se originó en las provincias de Babahoyo, Babahoyo o Los Ríos. Es considerado el plato de bandera de la gastronomía ecuatoriana.2​ En términos simples, el encebollado es un cocido o caldo de pescado que contiene albacora, yuca, cebolla colorada y cilantro.";
+        this.foods[1]=this.auxfood1;
+        //this.foods.push(this.auxfood);
+        /**     Hornado */
+        this.auxfood2.name="Hornado";
+        this.auxfood2.grade=parseInt(this.cadena[2].toString());
+        this.auxfood2.desciption="El hornado, nombre que proviene de la palabra hornear, es un plato típico de Ecuador. Se trata de un plato que contiene carne de cerdo hornado, principalmente es cocinado en leña, acompañado de distintas salsas y vegetales cocidos, como por ejemplo choclo, llapingachos, plátano maduro frito, aguacate, lechuga, tomate y demás ingredientes dependiendo la zona geográfica donde se lo prepare.";
+        this.foods[2]=this.auxfood2;
+        //this.foods.push(this.auxfood);
+
+        /**     morada */
+        this.auxfood3.name="Colada Morada";
+        this.auxfood3.grade=parseInt(this.cadena[3].toString());
+        this.auxfood3.desciption="La colada morada es una bebida que se prepara a base de la harina de maíz morado, junto con frutas, formando una líquido morado y espeso. ";
+        this.foods[3]=this.auxfood3;
+        //this.foods.push(this.auxfood);
+        /**     Fanesca */
+        this.auxfood4.name="Fanesca";
+        this.auxfood4.grade=parseInt(this.cadena[4].toString());
+        this.auxfood4.desciption="La Fanesca es un guiso a base de granos tiernos y pescado seco que se prepara en Ecuador durante la cuaresma.";
+        this.foods[4]=this.auxfood4;
+        //this.foods.push(this.auxfood);
+
+        /**     Higos */
+        this.auxfood5.name="Higos";
+        this.auxfood5.grade=parseFloat(this.cadena[5].toString());
+        this.auxfood5.desciption="Postre típico ecuatoriano, en especial de la zona de la sierra del país, son muy apetecidos y se comen cocidos con miel de panela o raspadura. En Ecuador, los higos van acompañados con queso fresco.";
+        this.foods[5]=this.auxfood5;
+        //this.foods.push(this.auxfood);
+        /**     Cuy */
+        this.auxfood6.name="Cuy";
+        this.auxfood6.grade=parseFloat(this.cadena[6].toString());
+        this.auxfood6.desciption="El cuy es una especie de roedor de la familia Caviidae, originario de la Cordillera de los Andes.";
+        this.foods[6]=this.auxfood6;
+        //this.foods.push(this.auxfood);
+
+        this.foods=this.bubleSort(this.foods);
+        
       })
 
+
+  }
+
+   bubleSort(params:food[]) {
+      const l = params.length;
+      for (let i = 0; i < l; i++ ) {
+        for (let j = 0; j < l - 1 - i; j++ ) {
+          if ( params[ j ].grade < params[ j +1 ].grade ) {
+            [ params[ j ], params[ j +1 ] ] = [ params[ j + 1 ],  params[ j ] ];
+          }
+        }
+      }
+    
+      return params;
 
   }
 

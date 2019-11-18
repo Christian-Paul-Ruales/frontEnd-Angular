@@ -6,17 +6,16 @@
         <div class="card-header">
           <h4>No sabes que pedir?</h4>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="margin: 25px">
           <!--Pregunta 1-->
           
-          <hr />
           <!--Pregunta 2-->
-          <div class="row">
+          <div class="row" style="margin-top: 1px;">
              <h5> Prefiero el sabor de:</h5>
             
               
           </div>
-          <div class="row">
+          <div class="row" >
               <div class="btn-group " data-toggle="buttons">
                 <label class="btn btn-secondary">
                   <input type="radio" name="p1" id="p11" autocomplete="off" value="mariscos"  [(ngModel)]="p1.response"  #options> mariscos frescos
@@ -49,7 +48,7 @@
            <!--Pregunta 3
             la 2 de encebollado y ceviche
           -->
-           <div class="row">
+           <div class="row" style="margin-top: 15px;">
               <h5>¿Le gusta sentir el sabor de la cevolla en su paladar?</h5>
             
               
@@ -77,7 +76,7 @@
            <!--Pregunta 4
             la 2 de hornado
           -->
-          <div class="row">
+          <div class="row" style="margin-top: 15px;">
             <h5>Le gusta el sabor del curtido dulce?</h5>
               
               
@@ -101,7 +100,7 @@
            <!--Pregunta 4
             la 2 de colada morada
           -->
-            <div class="row">
+            <div class="row" style="margin-top: 15px;">
               <h5>¿Disfruta mucho de acompañar su plato con una arina como lo es el pan?</h5> 
             </div>
               <div class="row">
@@ -122,7 +121,7 @@
            <!--Pregunta 5
             la 2 de fanesca¿La textura de tu plato lo encuentras mucho mas sabroso si es cremoso?
           -->
-            <div class="row">
+            <div class="row" style="margin-top: 15px;">
               <h5>¿La textura de tu plato lo encuentras mucho mas sabroso si es cremoso?</h5>
             </div>
               <div class="row">
@@ -147,7 +146,7 @@
             higos 2 no le puse
             la 2 de cuy
           -->
-            <div class="row">
+            <div class="row" style="margin-top: 15px;">
               <h5>¿Gustaria consumir una buena fuente de proteinas?</h5>
             </div>
               <div class="row">
@@ -169,7 +168,7 @@
             higos 2 no le puse
             la 2 de cuy
           -->
-            <div class="row">
+            <div class="row" style="margin-top: 15px;">
               <h5>¿Que prefiere a la hora de acompanar un plato?</h5>
             </div>
               <div class="row">
@@ -215,38 +214,14 @@
             </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Ceviche</td>
-                <td>{{cadena[0]}}</td>
+              <tr *ngFor="let afood of foods">
+                <td>{{ afood.name }}</td>
+                <td>{{ afood.desciption }}</td>
+                <td>{{ afood.grade }}</td>
               </tr>
-              <tr>
-                <td>Encebollado</td>
-                <td>{{cadena[1]}}</td>
-              </tr>
-              <tr>
-                  <td>Hornado</td>
-                  <td>{{cadena[2]}}</td>
-              </tr>
-              <tr>
-                    <td>Colada Morada</td>
-                    <td>{{cadena[3]}}</td>
-              </tr>
-              <tr>
-                  <td>Fanesca</td>
-                  <td>{{cadena[4]}}</td>
-            </tr>
-            <tr>
-                <td>Higos</td>
-                <td>{{cadena[5]}}</td>
-          </tr>
-          <tr>
-              <td>Cuy</td>
-              <td>{{cadena[6]}}</td>
-        </tr>
-
-
             </tbody>
           </table>
+
           <p>{{reply.response}}</p>
           <hr />
           Ceviche <br>
