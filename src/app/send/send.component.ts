@@ -23,6 +23,11 @@ export class SendComponent implements OnInit {
   principal:results[];
   aderitivo_proteinas:results=new results();
   preg3_:results=new results();
+  contextura:results=new results();
+  limon:results=new results();
+
+
+
   cadena:String[];
   auxObject:results=new results();
   
@@ -44,7 +49,8 @@ export class SendComponent implements OnInit {
   Sendr(){
     //console.log(" RESPUESTA::"+reply);
     this.res.response=this.p1.response+"-"+this.aderitivo_cevolla.response+"-"+this.aderitivo_papa_tortilla.response+"-"
-    +this.aderitivo_pan.response+"-"+this.aderitivo_crema.response+"-"+this.aderitivo_proteinas.response+"-"+this.preg3_.response;
+    +this.aderitivo_pan.response+"-"+this.aderitivo_crema.response+"-"+this.aderitivo_proteinas.response+"-"+this.preg3_.response+"-"
+    +this.contextura.response+"-"+this.limon.response;
     console.log(" Antes de mandar:"+this.res.response);
 
     console.log(" RES:"+this.res);

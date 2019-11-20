@@ -33,7 +33,7 @@
                   <input type="radio" name="p1" id="p15" autocomplete="off" value="bacalo" [(ngModel)]="p1.response" #options> bacalao
                 </label>
                 <label class="btn btn-secondary">
-                  <input type="radio" name="p1" id="p16" autocomplete="off" value="higos" [(ngModel)]="p1.response" #options> Sabores dulces
+                  <input type="radio" name="p1" id="p16" autocomplete="off" value="dulces" [(ngModel)]="p1.response" #options> Sabores dulces
                 </label>
                 <label class="btn btn-secondary">
                   <input type="radio" name="options" id="p17" autocomplete="off" value="carne_baja_grasa" [(ngModel)]="p1.response" #options> Carne baja en grasa
@@ -198,6 +198,58 @@
                 </div>
               </div>
 
+              <!--Pregunta 6
+            higos 2 no le puse
+            la 2 de cuy
+          -->
+            <div class="row" style="margin-top: 15px;">
+              <h5>¿En que porcentaje le gusta el limon?</h5>
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="limon" id="limon_1" autocomplete="off" value="bastante"  [(ngModel)]="limon.response"  #options> Con bastante limon es mejor
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="limon" id="limon_2" autocomplete="off" value="algo" [(ngModel)]="limon.response" #options> con algo de limon
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="limon" id="limon_3" autocomplete="off" value="poco" [(ngModel)]="limon.response" #options> muy poco limon
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="limon" id="limon_4" autocomplete="off" value="nada" [(ngModel)]="limon.response" #options> nada de limon
+                    </label>
+                    
+
+                </div>
+              </div>
+
+
+              <!--Pregunta 6
+            higos 2 no le puse
+            la 2 de cuy
+          -->
+            <div class="row" style="margin-top: 15px;">
+              <h5>¿La contextura de mi plato ideal es?</h5>
+            </div>
+              <div class="row">
+                  <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="contextura" id="contextura_1" autocomplete="off" value="espesa"  [(ngModel)]="contextura.response"  #options> Algo espesa
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="contextura" id="contextura_2" autocomplete="off" value="liquida" [(ngModel)]="contextura.response" #options> algo liquido
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="contextura" id="contextura_3" autocomplete="off" value="bebible" [(ngModel)]="contextura.response" #options> algo que se pueda beber
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="contextura" id="contextura_4" autocomplete="off" value="solido" [(ngModel)]="contextura.response" #options> contextura tipica (no sopas)
+                    </label>
+                    
+
+                </div>
+              </div>
 
         </div>
       </div>
