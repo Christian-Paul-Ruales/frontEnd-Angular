@@ -215,6 +215,10 @@
             </thead>
             <tbody>
               <tr *ngFor="let afood of foods">
+                  <td>
+                    <img width="200px" height="85px" src="{{afood.img}}" />
+                    
+                  </td>
                 <td>{{ afood.name }}</td>
                 <td>{{ afood.desciption }}</td>
                 <td>{{ afood.grade }}</td>
